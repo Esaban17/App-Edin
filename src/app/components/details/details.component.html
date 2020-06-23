@@ -1,0 +1,23 @@
+<h1>OPERACION</h1>
+<hr>
+<div *ngFor="let item of operation">
+  <h3>Operacion: {{item.number1}} {{item.operation}} {{item.number2}}</h3>
+  <h3>Resultado: {{item.result}}</h3>
+</div>
+<hr>
+<h3>Respuestas</h3>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id Guantes</th>
+        <th>Respuesta</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="responses">
+      <tr *ngFor="let item of responses">
+        <td>{{item.gloveCode}}</td>
+        <td>{{item.answer}}</td>
+      </tr>
+    </tbody>
+</table>

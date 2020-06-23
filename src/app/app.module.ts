@@ -18,13 +18,15 @@ import { OperationsService } from './services/operations.service';
 import { HttpClientModule } from '@angular/common/http';
 import { StatisticsComponent } from './components/statistics/statistics.component'; 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
