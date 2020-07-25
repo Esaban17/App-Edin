@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { OperationsService } from '../../services/operations.service';
@@ -6,13 +6,15 @@ import { OperationsService } from '../../services/operations.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
   Operations: any = [];
   Users: any = [];
 
   closeResult: string;
+  idModule: number = 1;
   gloveCode: number;
   number1:number;
   number2:number;
@@ -89,6 +91,7 @@ export class HomeComponent implements OnInit {
 
 
     let newOperation = {
+      idModule: this.idModule,
       gloveCode: this.gloveCode,
       number1: this.number1,
       operation: this.operation,

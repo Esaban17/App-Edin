@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //LIBRERIAS AGREGADAS
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
@@ -16,7 +16,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 //SERVICES
 import { OperationsService } from './services/operations.service';
 import { HttpClientModule } from '@angular/common/http';
-import { StatisticsComponent } from './components/statistics/statistics.component'; 
+import { StatisticsComponent } from './components/statistics/statistics.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { DetailsComponent } from './components/details/details.component';
 
@@ -38,7 +38,7 @@ import { DetailsComponent } from './components/details/details.component';
     FormsModule,
     HttpClientModule,
     NgxChartsModule,
-    BrowserAnimationsModule 
+    BrowserAnimationsModule
   ],
   providers: [
     OperationsService
