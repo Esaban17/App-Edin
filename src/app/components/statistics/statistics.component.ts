@@ -1,5 +1,4 @@
 import { Component, OnInit,ViewEncapsulation } from '@angular/core';
-import { single, single2, single3, single4 } from './data';
 import { StatisticsService } from '../../services/statistics.service';
 
 @Component({
@@ -42,10 +41,6 @@ export class StatisticsComponent implements OnInit {
   };
 
   constructor(private statisticsService:StatisticsService) { 
-    // Object.assign(this, { single });
-    // Object.assign(this, { single2 });
-    // Object.assign(this, { single3 });
-    // Object.assign(this, { single4 });
   }
 
   ngOnInit(): void {
@@ -73,7 +68,7 @@ export class StatisticsComponent implements OnInit {
         },
         {
           name: 'División',
-          value: parseInt(results[0].multiplicationPoints) 
+          value: parseInt(results[0].divisionPoints) 
         }
       ];
 

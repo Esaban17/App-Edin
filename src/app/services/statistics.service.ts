@@ -27,8 +27,6 @@ export class StatisticsService {
     return this.http.get(this.url + 'points/' + idModule, { headers: this.setHeaders() }).toPromise();
   }
 
-
-
   setHeaders() {
     this.headers.append('Content-Type', 'application/json');
     return this.headers;

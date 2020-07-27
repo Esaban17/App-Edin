@@ -12,10 +12,6 @@ export class OperationsService {
 
   constructor(private http: HttpClient) { }
 
-  getAll() {
-    return this.http.get(this.url + 'operations', { headers: this.setHeaders() }).toPromise();
-  }
-
   getResponses(idOperation: any){
     return this.http.get(this.url + 'responses/' + idOperation, { headers: this.setHeaders() }).toPromise();
   }
@@ -30,6 +26,10 @@ export class OperationsService {
 
   postQuestionMQTT(data:any){
     return this.http.post(this.url + 'preguntas', data, { headers: this.setHeaders() }).toPromise();
+  }
+
+  getAll() {
+    return this.http.get(this.url + 'operations', { headers: this.setHeaders() }).toPromise();
   }
 
   getUsers(){

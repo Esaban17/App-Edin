@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { DetailsComponent } from './components/details/details.component';
+import { NetworkComponent } from './components/network/network.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DetailsComponent } from './components/details/details.component';
     HomeComponent,
     NavbarComponent,
     StatisticsComponent,
-    DetailsComponent
+    DetailsComponent,
+    NetworkComponent
   ],
   imports: [
     BrowserModule,
