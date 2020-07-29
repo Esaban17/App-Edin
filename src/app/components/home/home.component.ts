@@ -111,9 +111,9 @@ export class HomeComponent implements OnInit {
       this.clearInputs();
     });
 
-    // this.operationService.postQuestionMQTT(newOperation).then((results:any) => {
-    //   console.log(results);
-    // });
+    this.operationService.postQuestionMQTT(newOperation).then((results:any) => {
+      console.log(results);
+    });
   }
 
   open(content: any) {

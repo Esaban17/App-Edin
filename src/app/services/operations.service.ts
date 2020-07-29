@@ -25,7 +25,7 @@ export class OperationsService {
   }
 
   postQuestionMQTT(data:any){
-    return this.http.post(this.url + 'preguntas', data, { headers: this.setHeaders() }).toPromise();
+    return this.http.post(this.url2 + 'preguntas', data, { headers: this.setHeaders() }).toPromise();
   }
 
   getAll() {
