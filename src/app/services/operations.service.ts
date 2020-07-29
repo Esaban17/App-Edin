@@ -6,8 +6,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class OperationsService {
 
-  url = "http://localhost:3000/";
-  url2 = "http://localhost:1880/";
+  url = "http://192.168.1.30:3000/";
+  url2 = "http://192.168.1.30:1880/";
   headers = new HttpHeaders();
 
   constructor(private http: HttpClient) { }

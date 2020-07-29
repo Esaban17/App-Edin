@@ -6,7 +6,7 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
 })
 export class StatisticsService {
 
-  url = "http://localhost:3000/";
+  url = "http://192.168.1.30:3000/";
   headers = new HttpHeaders();
 
   constructor(private http: HttpClient) { }
