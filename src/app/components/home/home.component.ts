@@ -107,12 +107,11 @@ export class HomeComponent implements OnInit {
     this.operationService.postOperationDB(newOperation).then((results:any) => {
       if(results.status){
         this.getAllOperations();
+        this.operationService.postQuestionMQTT(results.operation).then((results:any) => {
+          console.log(results);
+        });
       }
       this.clearInputs();
-    });
-
-    this.operationService.postQuestionMQTT(newOperation).then((results:any) => {
-      console.log(results);
     });
   }
 
@@ -123,7 +122,6 @@ export class HomeComponent implements OnInit {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
   }
-
 
   goToDetails(operation: any){
     console.log(operation);
