@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 
@@ -6,7 +7,7 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
 })
 export class NetworkService {
 
-  url = "http://192.168.0.14:3000/";
+  url = environment.apiUrl;
   headers = new HttpHeaders();
 
   constructor(private http: HttpClient) { }

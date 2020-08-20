@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OperationsService {
 
-  url = "http://192.168.0.14:3000/";
-  url2 = "http://192.168.0.14:1880/";
+  url = environment.apiUrl;
+  url2 = "http://192.168.1.9:1880/";
   headers = new HttpHeaders();
 
   constructor(private http: HttpClient) { }
