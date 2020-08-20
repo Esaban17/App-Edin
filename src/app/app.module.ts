@@ -17,9 +17,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { OperationsService } from './services/operations.service';
 import { HttpClientModule } from '@angular/common/http';
 import { StatisticsComponent } from './components/statistics/statistics.component';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { DetailsComponent } from './components/details/details.component';
 import { NetworkComponent } from './components/network/network.component';
+
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
 
 @NgModule({
   declarations: [

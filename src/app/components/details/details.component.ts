@@ -27,13 +27,14 @@ export class DetailsComponent implements OnInit {
 
   getResponses(){
     this.operationService.getResponses(this.idOperation).then((results:any) => {
-      this.responses = results
+      console.log(results);
+      this.responses = results;
     });
   }
 
   getOperation(){
     this.operationService.getOperation(this.idOperation).then((results:any) => {
-      this.operation = results
+      this.operation = results;
     });
   }
 
